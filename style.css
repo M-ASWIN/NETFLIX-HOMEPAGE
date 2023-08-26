@@ -1,0 +1,442 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    background-color: rgba(0,0,0);
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/* Common classes */
+
+.tc{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+html{
+    font-size: 16px;
+}
+
+.bg-red{
+    background-color: #e50914;
+} 
+
+.text-white{
+    color:white; 
+}
+
+.c-point{
+    cursor: pointer;
+}
+
+.m-auto{
+    margin: 0 auto;
+}
+
+.flex-c{
+    flex-direction: column;
+}
+
+.flex-r{
+    flex-direction: row;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inblock{
+    display: inline-block;
+}
+
+.jus-c{
+    justify-content: center;
+}
+
+.align-c{
+    align-items: center;
+}
+
+.m-0{
+    margin:0;
+}
+
+.p-0{
+    padding: 0;
+}
+
+.b-0{
+    border:0;
+}
+
+.d-under{
+    text-decoration: underline;
+}
+
+.d-none{
+    text-decoration: none;
+}
+
+/* Container class */
+
+.container{
+    padding: 10px 0;
+    background-image: linear-gradient(45deg, rgba(
+        0,0,0,0.6), rgba(
+            0,0,0,0.4)), url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+    border-bottom: 8px solid #222;
+}
+
+/* Navigation bar classes */
+
+nav{
+    padding: 0px 40px;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 4rem;
+    width: 8.375rem;
+}
+
+nav .but{
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+select{
+    background-color: black;
+    border: 1px solid white !important;
+    border-collapse: collapse;
+    margin: 0 12px 0 0 !important;
+}
+
+option{
+    background-color: gray;
+}
+
+.signin{
+    min-width: 5rem;
+    max-height: 3rem;
+    font-weight: 400;
+}
+
+/* Common Button class */
+
+.btn{
+    padding: 0.5rem 1.1rem;
+    border-radius:3px;
+    margin: 0 12px; 
+}
+
+/* Main Content*/
+
+main{
+    position: relative;
+    width: 100%;
+    padding: 10rem 2rem;
+    max-width: 950px;
+    z-index: 1;
+}
+
+main h1{
+    font-size: 3.125rem;
+    max-width: 640px;
+}
+
+main h2{
+    font-size: 1.625rem;
+    margin: 1rem auto;
+    max-width: 640px;
+    font-weight: 400;
+}
+
+form div{
+    margin-top: 1rem;
+}
+
+form h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.75em 0 0.25em;
+}
+
+.email{
+    padding: 1.2rem;
+    width: 50%;
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.submit{
+    border-radius: 0 !important;
+    padding: 0.39rem 1.1rem;
+    min-width: 130px;
+    width: 25%;
+    font-size: 1.625rem;
+    font-weight: 400;  
+}
+
+.submit:hover{
+    background-color: #f80915;
+}
+
+.submit::after{
+    font-family: 'FontAwesome';
+    content: '\f105';
+}
+
+/* Section */
+
+section{
+    border-bottom: 8px solid #222;
+}
+
+/* Common section layout */
+.section-layout{
+    max-width: 1100px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 6rem 0rem;
+}
+
+/* Content class */
+.content{
+    width: 60%;
+    padding: 0 3rem 0 3rem;
+}
+
+.content h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.content h2{
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+/* Image class */
+.img-container img{
+    height: 20rem;
+    width:100%;
+}
+
+/* FAQ section */
+
+.faq-container{
+    padding: 2rem 1rem;
+}
+
+.faq-container h1{
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 2.5rem;
+}
+
+.faq-section{
+    max-width: 1100px;
+    width: 68%;
+    max-width: 68%;
+}
+
+.faq-section ul{
+    list-style-type: none;
+    width: 75%;
+    max-width: 815px;
+}
+
+.faq-section li{
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    min-width: 350px;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    background: #303030;
+    margin: 0 3rem 0.5rem 0;
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.faq-container .plus{
+    position: absolute;
+    font-size: 4rem;
+    top:0;
+    right: 1rem;
+    padding-right: 1rem;
+}
+
+.faq-container form{
+    margin: 2rem auto;
+    min-width: 50%;
+}
+
+.faq-container form .email{
+    width: 100% !important;
+}
+
+
+.faq-container form .submit{
+    width: 43% !important;
+}
+
+/* Footer */
+
+footer{
+    max-width: 1100px;
+    height: 23rem;
+    width: 100%;
+    padding: 2rem 0 2rem 2rem;
+}
+
+.footer-content{
+    color: #757575;
+    font-size: 0.9rem;
+    display: block;
+    width: 100%;
+    padding: 2rem 3rem;
+}
+
+footer ul{
+    list-style-type: none;
+    margin-left:0;
+    padding: 0;
+    max-width: 1000px;
+}
+
+.footer-link{
+    padding: 0;
+    margin-bottom: 1rem;
+    min-width: 100px;
+    width: 20%;
+    padding-right: 0.8rem;
+    vertical-align: top;
+    margin-right: 2rem;
+}
+
+.footer-link span:hover{
+    text-decoration: underline;
+}
+
+.number:hover{
+    text-decoration: underline;
+}
+
+.footer-top{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+footer select{
+    margin:0 !important;
+    padding: 0.8rem 1rem !important;
+    color: #757575;
+}
+
+footer select option{
+    background-color: black;
+}
+
+.footer-bottom{
+    margin-top: 1.2rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:949px) {
+    form div{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .email{
+        margin-bottom: 1rem;
+        width: 65%;
+    }
+    .section-layout{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-container img{
+        height: 15rem;
+        width:100%;
+    }
+    
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .content{
+        width: 60%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    nav{
+        padding: 0 1rem;
+    }
+
+    nav .but{
+        margin-left: 3.5rem;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .signin{
+        padding: 0.6rem 1rem 1rem;
+    }
+
+    .email{
+        padding: 0.8rem;
+        width: 80%;
+    }
+
+    .submit{
+        min-width: 12rem;
+        padding: 0.5rem 1rem;
+        font-size: 1.6rem;
+    }
+
+    main{
+        position: relative;
+        width: 100%;
+        padding: 6rem 2rem;
+        max-width: 950px;
+        margin: 0 auto;
+        z-index: 1;
+    }
+
+    .img-container img{
+        margin-top: 1rem;
+    }
+
+    .faq-container form .email{
+        width: 80% !important;
+    }
+
+    .footer-content{
+        padding-left: 4rem;
+    }
+    .footer-link{
+        width: 33%;
+    }
+
+}
